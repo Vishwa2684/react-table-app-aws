@@ -2,6 +2,7 @@
   "name": "react-table-app",
   "version": "0.1.0",
   "private": true,
+  "start": "react-scripts start --host 0.0.0.0",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
