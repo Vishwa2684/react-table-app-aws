@@ -3,9 +3,10 @@ FROM node
 WORKDIR /app
 
 # copy only package manifests first, so dependencies are cached
-COPY . /app
+COPY package*.json ./
 RUN npm install
 
+COPY . .
 EXPOSE 3000
 
-CMD ["npm", "start", "--", "--host=0.0.0.0"]
+CMD ["npm", "start"]
